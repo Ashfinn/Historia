@@ -1,10 +1,10 @@
-# Historical Events Explorer
+# Historia
 
 ![Project Image](project_image.png)
 
 ## Introduction
 
-The Historical Events Explorer is a web application that allows users to explore historical events that occurred on a specific date. Users can select a date using a user-friendly interface, and the application fetches relevant historical events from Wikipedia.
+Historia is a web application that allows users to explore historical events that occurred on a specific date. Users can select a date using a user-friendly interface, and the application fetches relevant historical events from Wikipedia.
 
 ## Features
 
