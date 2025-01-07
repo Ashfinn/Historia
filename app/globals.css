@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 225 16% 11%;
+    --foreground: 210 40% 98%;
+    
+    --card: 225 14% 10%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 225 14% 10%;
+    --popover-foreground: 210 40% 98%;
+    
+    --primary: 199 89% 48%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 228 17% 14%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --accent: 199 89% 48%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 199 89% 48% / 0.2;
+    --ring: 199 89% 48%;
+  }
+}
+
+/* Cyberpunk Glitch Effect */
+.glitch-text {
+  position: relative;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+              -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+              0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  animation: glitch 1000ms infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+                -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+                -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+                0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+                -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+                0.05em 0 0 rgba(0, 255, 0, 0.75),
+                0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
